@@ -1,0 +1,28 @@
+$primary-color: #232526;
+$secondary-color: #333333;
+$third-color: #f80310;
+$text-color: #fff;
+$primary-font: 'Montserrat',
+sans-serif;
+
+@mixin easeOut {
+	transition: all 0.5s ease-out;
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin mediaMd {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin mediaLg {
+	@media screen and (min-width: 769px) and (max-width: 1170px) {
+		@content;
+	}
+}

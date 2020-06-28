@@ -1,0 +1,81 @@
+@include mediaLg {
+	html,
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	.intel {
+		.container {
+			padding: 0;
+		}
+	}
+
+	.product-desc {
+		display: flex;
+		flex-direction: column;
+
+		h1 {
+			text-align: center;
+		}
+
+		.specs {
+			margin-left: 2.1rem;
+		}
+	}
+
+	.content {
+		flex-direction: column;
+
+		.slider-wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	.intel-bg {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@include mediaMd {
+	html,
+	body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+
+	.wrapper {
+		display: unset;
+	}
+
+	.product-desc {
+		display: flex;
+		flex-direction: column;
+
+		h1 {
+			text-align: center;
+		}
+	}
+
+	.content {
+		flex-direction: column;
+
+		.slider-wrapper {
+			display: flex;
+			flex-direction: column;
+
+			.slider {
+				margin-left: unset;
+			}
+		}
+	}
+
+	.intel-bg {
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden; }
+  .intel .container {
+    padding: 0; }
+  .product-desc {
+    display: flex;
+    flex-direction: column; }
+    .product-desc h1 {
+      text-align: center; }
+    .product-desc .specs {
+      margin-left: 2.1rem; }
+  .content {
+    flex-direction: column; }
+    .content .slider-wrapper {
+      display: flex;
+      flex-direction: column; }
+  .intel-bg img {
+    width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden; }
+  .wrapper {
+    display: unset; }
+  .product-desc {
+    display: flex;
+    flex-direction: column; }
+    .product-desc h1 {
+      text-align: center; }
+  .content {
+    flex-direction: column; }
+    .content .slider-wrapper {
+      display: flex;
+      flex-direction: column; }
+      .content .slider-wrapper .slider {
+        margin-left: unset; }
+  .intel-bg img {
+    width: 100%; } }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #232526;
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  width: 100%; }
+
+.container {
+  width: 100%;
+  max-width: 83rem;
+  margin: 0 auto;
+  padding: 0 3rem; }
+
+.menu {
+  width: 100%; }
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none; }
+  .menu-link {
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff; }
+    .menu-link:hover {
+      color: #f80310;
+      transition: all 0.5s ease-out; }
+  .menu-item.current > a {
+    color: #f80310; }
+
+.btn {
+  margin: 1rem 0 1.7rem 0;
+  padding: 0.6rem 5rem;
+  border-radius: 2rem;
+  background-color: #333333;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer; }
+  .btn:hover {
+    color: #f80310;
+    border: 2px solid #f80310;
+    transition: all 0.5s ease-out; }
+
+main {
+  padding: 1rem 5rem; }
+  main .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main .content {
+    display: flex; }
+  main .slider {
+    width: 500px;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 7.2rem; }
+    main .slider > a {
+      color: #f80310;
+      font-weight: 900;
+      display: inline-flex;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: #333333;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 2rem 0 0 0;
+      position: relative; }
+      main .slider > a:active,
+      main .slider > a :focus {
+        color: #f80310;
+        background: black; }
+  main .slides {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; }
+    main .slides > div {
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      width: 500px;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px; }
+  main .specs-heading {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 1.5px; }
+  main .product-desc .specs {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr); }
+    main .product-desc .specs .item {
+      color: #fff; }
+      main .product-desc .specs .item span {
+        color: #f80310; }
+
+.intel {
+  background: #232526; }
+  .intel-bg img {
+    height: 100%;
+    margin-bottom: -0.3rem; }
+
+.prebuilt,
+.benchmarks {
+  background-color: #333333; }
+  .prebuilt .why-us,
+  .prebuilt .benchmarks-content,
+  .benchmarks .why-us,
+  .benchmarks .benchmarks-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .prebuilt .why-us .heading,
+    .prebuilt .benchmarks-content .heading,
+    .benchmarks .why-us .heading,
+    .benchmarks .benchmarks-content .heading {
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 1.9rem; }
+      .prebuilt .why-us .heading hr,
+      .prebuilt .benchmarks-content .heading hr,
+      .benchmarks .why-us .heading hr,
+      .benchmarks .benchmarks-content .heading hr {
+        width: 340px;
+        border-color: #f80310; }
+    .prebuilt .why-us p,
+    .prebuilt .benchmarks-content p,
+    .benchmarks .why-us p,
+    .benchmarks .benchmarks-content p {
+      color: #fff;
+      text-align: center; }
+    .prebuilt .why-us img,
+    .prebuilt .benchmarks-content img,
+    .benchmarks .why-us img,
+    .benchmarks .benchmarks-content img {
+      margin: 0 0 2rem 0; }
